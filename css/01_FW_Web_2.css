@@ -1,0 +1,211 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* for future project
+main hearder height 96px 
+bar 1 56px
+bar 2 40px
+*/
+
+/* navigation bar 01 */
+.navbar01 {
+  height: 56px;
+  width: 100%;
+  padding: 0px 50px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-block: 1px solid #dde1e2;
+  background-color: white;
+  opacity: 0.9;
+}
+
+/* navigation 01 */
+.nav01 {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+/* navigation logo (left) */
+.nav_logo {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.nav_logo a img {
+  width: 85.86px;
+  height: 35px;
+}
+
+/* navigation menu */
+#nav_menu {
+  display: none;
+  align-items: center;
+  gap: 35px;
+}
+
+/* navigation link */
+.nav_item {
+  list-style: none;
+}
+
+.nav_item a {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav_hamburger {
+  width: 24px;
+  border: none;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav_hamburger_bar {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  margin: 4px 0;
+  display: block;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../pic_icon/TreeGrowth4.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner {
+  position: absolute;
+  top: 175px;
+  left: 50px;
+  color: white;
+  font-size: 2.35rem;
+  padding-right: 50px;
+}
+
+.sec01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec01_inner {
+  padding: 70px 0px;
+  max-width: 1440px;
+  width: 92%;
+}
+
+.sec01_inner h1 {
+  color: #27488E;
+}
+
+.sec01_inner p {
+
+}
+
+.sec02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #27488E;
+}
+
+.sec02_inner {
+  padding: 70px 0px;
+  max-width: 1440px;
+  width: 92%;
+}
+
+.sec02_inner h1 {
+  color: white;
+}
+
+.sec02_inner h2 {
+  color: white;
+}
+
+.sec02_inner p {
+  color: white
+}
+
+/* DESKTOP VIEW */
+@media only screen and (min-width: 1024px) {
+
+  /* show menu inline */
+  #nav_menu {
+    display: flex;
+  }
+
+  .hero-section {
+    background-image: url("../pic_icon/TreeGrowth3.jpeg");
+  }
+
+  .banner {
+    top: 30%;
+    left: 20%;
+    font-size: 3.25rem;
+  }
+
+  .sec01_inner {
+    width: 78%;
+  }
+
+  .sec02_inner {
+    width: 78%;
+  }
+
+  /* hide hamburger */
+  .nav_hamburger {
+    display: none;
+  }
+}
+
+/* DESKTOP VIEW (BIG) */
+@media only screen and (min-width: 1580px) {
+
+  .navbar01 {
+  height: 84px;
+  padding: 0px 100px;
+  }
+
+  html {
+    font-size: 24px;
+  }
+
+  .nav_logo a img {
+    width: 128.79px;
+    height: 52.5px;
+  }
+}
