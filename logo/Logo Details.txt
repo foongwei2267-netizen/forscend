@@ -1,6 +1,0 @@
-FW Suite
-#27488E
-Inter
-Size 18 / 20
-Bold & Regular
-Spacing 8 / 12
