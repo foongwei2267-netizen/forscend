@@ -1,0 +1,66 @@
+/* blutton white & words blue */
+.button01_white {
+  background-color: white;
+  color: #27488e;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.button01_white:hover {
+  background-color: #74B0FF;
+}
+
+/* blutton blue & words white */
+.button01_blue {
+  background-color: #27488e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.button01_blue:hover {
+  background-color: #74B0FF;
+}
+
+/* words white --> */
+.button02_white {
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.button02_white:hover {
+  color: #74B0FF;
+}
+
+/* words blue --> */
+.button02_blue {
+  color: #27488e;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.button02_blue:hover {
+  color: #74B0FF;
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px) {
+
+
+
+}
+
+/* Desktop View (Big) */
+@media only screen and (min-width: 1580px) {
+
+
+
+}
