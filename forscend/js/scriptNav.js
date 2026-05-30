@@ -1,0 +1,99 @@
+// Navigation Bar Sticky
+const navBar01 = document.querySelector('.navbar01');
+const hamBar = document.querySelectorAll('.ham_bar');
+const logo = document.querySelector('.nav_logo');
+const subMenu = document.querySelectorAll('.sub_menu');
+
+if (navBar01) {
+  window.addEventListener('scroll', () => {
+    const isSticky = window.scrollY > navBar01.offsetHeight;
+
+    navBar01.classList.toggle('sticky', isSticky);
+
+    hamBar.forEach(hamBar => {
+      hamBar.classList.toggle('sticky', isSticky);
+    });
+
+    if (logo) {
+      logo.src = isSticky
+        ? 'logo/f30_logo_cwl.png'
+        : 'logo/f60_logo_wwl.png';
+    }
+
+    navItem.forEach(navItem => {
+      navItem.classList.toggle('sticky', isSticky);
+    })
+
+    subMenu.forEach(subMenu => {
+      subMenu.classList.toggle('sticky', isSticky);
+    })
+
+  });
+}
+
+// Manburger Menu
+const hamMenu = document.querySelector('.ham_menu');
+const navMenu = document.querySelector('.nav_menu');
+const offMenu = document.querySelector('.off_menu');
+const navItem = document.querySelectorAll('.nav_item');
+//const offMenu = document.querySelectorAll('');
+
+if (hamMenu && navMenu && offMenu) {
+  hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    offMenu.classList.toggle('active');
+    navItem.forEach(navItem => {
+      navItem.classList.toggle('active');
+    }) 
+  });
+}
+
+
+//const hamMenu = document.querySelector('.ham_menu');
+
+//const navMenu = document.querySelector('.nav_menu');
+
+//const offMenu = document.querySelector('.off_menu');
+
+//hamMenu.addEventListener('click', () => {
+//  hamMenu.classList.toggle('active');
+//  offMenu.classList.toggle('active');
+//  navMenu.classList.toggle('active');
+//})
+
+
+// Manburger Menu Closed - Click Outside
+offMenu.addEventListener('click', () => {
+    hamMenu.classList.remove('active');
+    navMenu.classList.remove('active');
+    offMenu.classList.remove('active');
+
+    navItem.forEach(item => {
+      item.classList.remove('active');
+    });
+  });
+
+
+// Form
+const enquirySelect = document.querySelector('.enquiry_select');
+const formOtherNature = document.querySelector('.form_other_nature');
+
+console.log('Select:', enquirySelect);
+console.log('Input:', formOtherNature);
+
+if (enquirySelect) {
+  enquirySelect.addEventListener('change', () => {
+    console.log('Selected:', enquirySelect.value);
+
+    if (enquirySelect.value === 'Other') {
+      formOtherNature.classList.add('active');
+    } else {
+      formOtherNature.classList.remove('active');
+    }
+  });
+}
+
+enquirySelect.addEventListener('change', () => {
+  console.log('Selected:', enquirySelect.value);
+});
